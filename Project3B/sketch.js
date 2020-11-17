@@ -27,7 +27,7 @@ for(let i=0; i<width; i=i +50){
   ypos=random(0,height)
   xpos=random(0,width)
   height=random(300,600)
-//random colore
+//random color
   let rcol=random(0,255)
   let gcol=random(0,255)
   let bcol=random(0,255)
