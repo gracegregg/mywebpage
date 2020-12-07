@@ -18,7 +18,7 @@ let moonsound
 function preload() {
 //load night sky image
 moonimg=loadImage('https://i.imgur.com/n7ou4y0.jpg')
-moonsound=loadSound('https://gracegregg.github.io/mywebpage/SoundStuff/sunsound.wav')
+moonsound=loadSound('https://gracegregg.github.io/mywebpage/SoundStuff/moonsound.mp3')
 
 
 }
@@ -109,8 +109,8 @@ fill(255,150)
 circle(xpos,ypos,circlesize)
 }
 
-if(keyIsPressed & keyCode === ENTER){
+
 moonsound.play()
-}
+
 }
 }
