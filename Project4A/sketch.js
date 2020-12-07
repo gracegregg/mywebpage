@@ -11,12 +11,14 @@ let xpos1
 let xpos2
 let ypos1
 let ypos2
+let moonsound
 
 
 
 function preload() {
 //load night sky image
 moonimg=loadImage('https://i.imgur.com/n7ou4y0.jpg')
+moonsound=loadSound('https://gracegregg.github.io/mywebpage/SoundStuff/sunsound.wav')
 
 
 }
@@ -35,10 +37,15 @@ xoffset2=(0.0)
 yoffset2=(0.0)
 
 
+
+
 }
 
 
 function draw() {
+
+
+
 //purple lines drawn in noise
 xpos1=noise(xoffset1)*width
 ypos1=noise(yoffset1)*height
@@ -100,6 +107,10 @@ ypos=random(0,height)
 circlesize=random(5,10)
 fill(255,150)
 circle(xpos,ypos,circlesize)
+}
+
+if(keyIsPressed & keyCode === ENTER){
+moonsound.play()
 }
 }
 }
