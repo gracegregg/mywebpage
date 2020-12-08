@@ -95,7 +95,7 @@ xoffset2=xoffset2+0.01
 yoffset2=yoffset2+0.01
 
 //white moon with no stroke in middle of screen
-fill(255,70)
+fill(100,100,180,70)
 noStroke()
 circle(windowWidth/2,windowHeight/2,250)
 
@@ -104,13 +104,13 @@ if(mouseIsPressed){
 for(let i=0; i<100; i=i+1){
 xpos=random(0,width)
 ypos=random(0,height)
-circlesize=random(5,10)
+circlesize=random(3,6)
 fill(255,150)
 circle(xpos,ypos,circlesize)
 }
 
 
-moonsound.play()
+
 
 }
 }
